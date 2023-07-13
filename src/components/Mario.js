@@ -133,7 +133,7 @@ const Mario = () => {
 
   const handleWaiting = async () => {
     while (waiting) {
-      setTimeout(async () => {
+      // setInterval(async () => {
         const response2 = await fetch(
           `http://localhost:5000/player/checkWait`,
           {
@@ -171,7 +171,7 @@ const Mario = () => {
         } else if (response2.status === 500) {
           console.log(resData2);
         }
-      }, 2000);
+      // }, 2000);
     }
   };
 
