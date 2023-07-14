@@ -186,33 +186,34 @@ const Mario = () => {
       dispatch(setPause(true));
       dispatch(
         setMessage(
-          "You have successfully received your confirmation email for the hackathon. Now Entering Phising Zone"
+          "You have successfully received your confirmation email for the hackathon. Now Entering MiMA Zone"
         )
       );
       setTimeout(() => {
         dispatch(setPause(false));
-      }, 2000);
+      }, 4000);
     } else if (score === 100) {
       dispatch(setPause(true));
       dispatch(
         setMessage(
-          "You have successfully received your Travel Details for the hackathon. Now Entering MiMA Zone"
+          "You have successfully received your Travel Details for the hackathon. Now Entering DDoS Zone"
         )
       );
       setTimeout(() => {
         dispatch(setPause(false));
-      }, 2000);
-    } else if (score === 150) {
-      dispatch(setPause(true));
-      dispatch(
-        setMessage(
-          "You have successfully reached your hackathon destination. Now Entering DDoS Zone"
-        )
-      );
-      setTimeout(() => {
-        dispatch(setPause(false));
-      }, 2000);
+      }, 4000);
     }
+    // } else if (score === 150) {
+    //   dispatch(setPause(true));
+    //   dispatch(
+    //     setMessage(
+    //       "You have successfully reached your hackathon destination."
+    //     )
+    //   );
+    //   setTimeout(() => {
+    //     dispatch(setPause(false));
+    //   }, 4000);
+    // }
     if (score === 200) {
       dispatch(
         setMessage(
@@ -226,7 +227,7 @@ const Mario = () => {
         dispatch(setDie(false));
         dispatch(setPause(false));
         dispatch(setScore(0));
-      }, 3000);
+      }, 4000);
     }
     if (
       mario_left < obs1_left + obs1_width &&
